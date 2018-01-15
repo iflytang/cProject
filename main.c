@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
+#include <stdbool.h>
 
 int main() {
 
@@ -22,21 +23,43 @@ int main() {
     free(dst);*/
 
     /* test & */
-    int a = 0xff;
+   /* int a = 0xff;
     int b = 0xf0;
     if (a & ~b) {
         printf("if(~b:%x) ==> a(%x) & b(%x) =  %x\n",~b, a, b, a & b);
     } else {
         printf("else ==> a(%x) & b(%x) =  %x\n",a, b, a & b);
-    }
+    }*/
 
     /* test ennum */
-    enum Num {
+    /*enum Num {
         one,
         two,
         three
     };
-    printf("ones's enum = %d\n", one);
+    printf("ones's enum = %d\n", one);*/
+
+
+    /*test short size*/
+    /*short short_num = 12;
+    printf("short's size is %d\n", sizeof short_num);*/
+
+    bool is_true(int int_a) {
+        if (int_a > 0)
+            return true;
+        else
+            return false;
+    }
+    bool print_true() {
+        printf("print_true\n");
+        return true;
+    }
+    bool print_false() {
+        printf("print_false\n");
+        return true;  // test oder operation. should overwrite by followed false
+    }
+    bool bool_a = is_true(-2) ? print_true() : (print_false(), false);  // order operation
+    printf("bool_a ? %d\n", bool_a);
 
     return 0;
 }
