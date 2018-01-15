@@ -2,6 +2,7 @@
 #include <string.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <netinet/in.h>
 
 int main() {
 
@@ -44,7 +45,7 @@ int main() {
     /*short short_num = 12;
     printf("short's size is %d\n", sizeof short_num);*/
 
-    bool is_true(int int_a) {
+    /*bool is_true(int int_a) {
         if (int_a > 0)
             return true;
         else
@@ -59,7 +60,19 @@ int main() {
         return true;  // test oder operation. should overwrite by followed false
     }
     bool bool_a = is_true(-2) ? print_true() : (print_false(), false);  // order operation
-    printf("bool_a ? %d\n", bool_a);
+    printf("bool_a ? %d\n", bool_a);*/
+
+    /* big endian and little endian */
+    uint16_t OFPC_FRAG_MASK = 3;
+    uint16_t OFPC_INVALID_TTL_TO_CONTROLLER = 1 << 2;
+    unsigned short valid_mask = htons(OFPC_FRAG_MASK);
+    printf("FRAG_MASK: %d; valid_mask: %d\n", OFPC_FRAG_MASK, valid_mask);
+    unsigned short ttl_bit = htons(OFPC_INVALID_TTL_TO_CONTROLLER);
+    printf("TTL: %d, ttl_bit: %d\n",OFPC_INVALID_TTL_TO_CONTROLLER, ttl_bit);
+    printf("valid_mask:%d, ", valid_mask);
+    valid_mask |= ttl_bit;
+    printf("ttl_bit: %d, valid_mask:%d\n", ttl_bit, valid_mask);
+
 
     return 0;
 }
