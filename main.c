@@ -73,6 +73,10 @@ int main() {
     valid_mask |= ttl_bit;
     printf("ttl_bit: %d, valid_mask:%d\n", ttl_bit, valid_mask);
 
+    /* define as a function */
+    #define FORCE_TO_INT(X) ((int)(X))
+    int int_a = FORCE_TO_INT((2.5));
+    printf("value: %d\n", int_a);
 
     return 0;
 }
