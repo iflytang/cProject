@@ -75,15 +75,42 @@ int main() {
     printf("ttl_bit: %d, valid_mask:%d\n", ttl_bit, valid_mask);*/
 
     /* define as a function */
-    #define FORCE_TO_INT(X) ((int)(X))
+    /*#define FORCE_TO_INT(X) ((int)(X))
     int int_a = FORCE_TO_INT((2.5));
-    printf("value: %d\n", int_a);
+    printf("value: %d\n", int_a);*/
 
     /* test assert*/
-    assert(0 & int_a);
-    printf("value: %d\n", int_a);
+    /*assert(0 & int_a);
+    printf("value: %d\n", int_a);*/
 
+    /* test nested struct */
+    struct flow {
+        int a;
+        int b;
+    };
+    struct wildcards {
+        struct flow masks;
+    };
+    struct value {
+        struct flow value;
+    };
+    struct match {
+        struct flow flow;
+        struct wildcards wc;
+        struct value value;
+    };
+    struct match match_x;
+    match_x.flow.a = 0xff;
+    match_x.flow.b = 0xff;
+    match_x.wc.masks.a = 0x00;
+    match_x.wc.masks.b = 0x11;
+    match_x.value.value.a = match_x.flow.a & match_x.wc.masks.a;
+    match_x.value.value.b = match_x.flow.b & match_x.wc.masks.b;
+    printf("value_a: %x\tvalue_b:%x\n",match_x.value.value.a, match_x.value.value.b);
 
+    /* test sizeof array */
+    int a[1024/8];
+    printf("sizeof a: %d\n", sizeof a);
 
     return 0;
 }
