@@ -31,7 +31,7 @@ int main() {
         printf("if(~b:%x) ==> a(%x) & b(%x) =  %x\n",~b, a, b, a & b);
     } else {
         printf("else ==> a(%x) & b(%x) =  %x\n",a, b, a & b);
-    }*/
+    }
 
     /* test ennum */
     /*enum Num {
@@ -113,10 +113,19 @@ int main() {
     printf("sizeof a: %d\n", sizeof a);*/
 
     /* test a roundup method */
-    #define ROUNDUP(X, Y) (X+Y-1)/Y*Y  // X should be integer product of Y
+    /*#define ROUNDUP(X, Y) (X+Y-1)/Y*Y  // X should be integer product of Y
     int x = 9;
     int y = 8;
-    printf("roundup(num: %d, base: %d) is %d\n", x, y, ROUNDUP(x, y));
+    printf("roundup(num: %d, base: %d) is %d\n", x, y, ROUNDUP(x, y));*/
+
+    /* test sizeof */
+    struct test {
+        int a;
+        int b;
+    };
+    struct test *test;
+    int size = 1;
+    printf("sizeof *test + size: %d\n ", sizeof *test + size); /* sizeof has higher priority than '+' */
 
     return 0;
 }
