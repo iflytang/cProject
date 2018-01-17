@@ -84,7 +84,7 @@ int main() {
     printf("value: %d\n", int_a);*/
 
     /* test nested struct */
-    struct flow {
+/*    struct flow {
         int a;
         int b;
     };
@@ -106,11 +106,17 @@ int main() {
     match_x.wc.masks.b = 0x11;
     match_x.value.value.a = match_x.flow.a & match_x.wc.masks.a;
     match_x.value.value.b = match_x.flow.b & match_x.wc.masks.b;
-    printf("value_a: %x\tvalue_b:%x\n",match_x.value.value.a, match_x.value.value.b);
+    printf("value_a: %x\tvalue_b:%x\n",match_x.value.value.a, match_x.value.value.b);*/
 
     /* test sizeof array */
-    int a[1024/8];
-    printf("sizeof a: %d\n", sizeof a);
+    /*int a[1024/8];
+    printf("sizeof a: %d\n", sizeof a);*/
+
+    /* test a roundup method */
+    #define ROUNDUP(X, Y) (X+Y-1)/Y*Y  // X should be integer product of Y
+    int x = 9;
+    int y = 8;
+    printf("roundup(num: %d, base: %d) is %d\n", x, y, ROUNDUP(x, y));
 
     return 0;
 }
