@@ -119,13 +119,30 @@ int main() {
     printf("roundup(num: %d, base: %d) is %d\n", x, y, ROUNDUP(x, y));*/
 
     /* test sizeof */
-    struct test {
+    /*struct test {
         int a;
         int b;
     };
     struct test *test;
     int size = 1;
-    printf("sizeof *test + size: %d\n ", sizeof *test + size); /* sizeof has higher priority than '+' */
+    printf("sizeof *test + size: %d\n ", sizeof *test + size); *//* sizeof has higher priority than '+' */
+
+    /* test structure */
+    struct test {
+        int *a;
+        char b;
+        float c;
+    };
+    struct test *test;  /* structure pointer should be initialized */
+    printf("pointer of test: %p\n", test);
+    test = (struct test *)malloc(sizeof(*test));
+    printf("pointer of test: %p\n", test);
+    int int_a = 2;
+    test->a = &int_a;
+    test->b = 'b';
+    test->c = 1.25;
+    printf("a: %d\nb: %c\nc: %.2f\n", *test->a, test->b, test->c);
+    free(test);
 
     return 0;
 }
