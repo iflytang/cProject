@@ -145,7 +145,7 @@ int main() {
     free(test);*/
 
     /* test nested structure */
-    struct node {
+    /*struct node {
         bool flag;
         bool f;      // the same type variable should store consecutively to avoid ALIGN memory waste
         char *str;
@@ -162,7 +162,17 @@ int main() {
     printf("root->str: %s\n root->node->str:%s\n", root->str, root->node->str);
     printf("offsetof node: %d\n", offsetof(struct node, node));
     free(root);
-    free(node);
+    free(node);*/
+
+    /* test union */
+    union u_test {
+        float f;
+        int i;
+    };
+    union u_test u_test;
+    u_test.f = 3.14;
+    //u_test.i = 4;
+    printf("%.2f\t%d\n", u_test.f, u_test.i);  // we cannot access two variables at same time
 
     return 0;
 }
