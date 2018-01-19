@@ -128,12 +128,12 @@ int main() {
     printf("sizeof *test + size: %d\n ", sizeof *test + size); *//* sizeof has higher priority than '+' */
 
     /* test structure */
-    struct test {
+  /*  struct test {
         int *a;
         char b;
         float c;
     };
-    struct test *test;  /* structure pointer should be initialized */
+    struct test *test;  *//* structure pointer should be initialized *//*
     printf("pointer of test: %p\n", test);
     test = (struct test *)malloc(sizeof(*test));
     printf("pointer of test: %p\n", test);
@@ -142,7 +142,27 @@ int main() {
     test->b = 'b';
     test->c = 1.25;
     printf("a: %d\nb: %c\nc: %.2f\n", *test->a, test->b, test->c);
-    free(test);
+    free(test);*/
+
+    /* test nested structure */
+    struct node {
+        bool flag;
+        bool f;      // the same type variable should store consecutively to avoid ALIGN memory waste
+        char *str;
+        struct node *node;
+    };
+    printf("offsetof str: %d\n", offsetof(struct node, str)); // here have ALIGN(64b=8B), so 'struct' wastes memory
+    struct node *root = (struct node *)malloc(sizeof *root);
+    root->flag = true;  // or *root.flag=true
+    root->str = "root";
+    struct node *node = (struct node *)malloc(sizeof *node);
+    node->flag = true;
+    node->str = "iflytang";
+    root->node = node;
+    printf("root->str: %s\n root->node->str:%s\n", root->str, root->node->str);
+    printf("offsetof node: %d\n", offsetof(struct node, node));
+    free(root);
+    free(node);
 
     return 0;
 }
