@@ -6,17 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/tsf/CLionProjects/cProject/main.c
+/home/tsf/CLionProjects/cProject/signalLinkedList.c
 stdio.h
 -
 string.h
 -
 malloc.h
--
-stdbool.h
--
-netinet/in.h
--
-assert.h
 -
 

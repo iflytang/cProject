@@ -123,32 +123,32 @@ cProject/fast:
 	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/build
 .PHONY : cProject/fast
 
-main.o: main.c.o
+signalLinkedList.o: signalLinkedList.c.o
 
-.PHONY : main.o
+.PHONY : signalLinkedList.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.o
-.PHONY : main.c.o
+signalLinkedList.c.o:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/signalLinkedList.c.o
+.PHONY : signalLinkedList.c.o
 
-main.i: main.c.i
+signalLinkedList.i: signalLinkedList.c.i
 
-.PHONY : main.i
+.PHONY : signalLinkedList.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.i
-.PHONY : main.c.i
+signalLinkedList.c.i:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/signalLinkedList.c.i
+.PHONY : signalLinkedList.c.i
 
-main.s: main.c.s
+signalLinkedList.s: signalLinkedList.c.s
 
-.PHONY : main.s
+.PHONY : signalLinkedList.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.s
-.PHONY : main.c.s
+signalLinkedList.c.s:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/signalLinkedList.c.s
+.PHONY : signalLinkedList.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cProject"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... signalLinkedList.o"
+	@echo "... signalLinkedList.i"
+	@echo "... signalLinkedList.s"
 .PHONY : help
 
 

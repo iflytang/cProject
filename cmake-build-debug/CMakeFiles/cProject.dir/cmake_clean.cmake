@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cProject.dir/main.c.o"
+  "CMakeFiles/cProject.dir/signalLinkedList.c.o"
   "cProject.pdb"
   "cProject"
 )
