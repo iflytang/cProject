@@ -1,1 +1,1 @@
-/usr/bin/cc  -g   CMakeFiles/cProject.dir/signalLinkedList.c.o  -o cProject 
+/usr/bin/cc  -g   CMakeFiles/cProject.dir/print_strtok.c.o  -o cProject 

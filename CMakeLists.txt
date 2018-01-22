@@ -3,5 +3,5 @@ project(cProject)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES signalLinkedList.c)
+set(SOURCE_FILES  print_strtok.c)
 add_executable(cProject ${SOURCE_FILES})

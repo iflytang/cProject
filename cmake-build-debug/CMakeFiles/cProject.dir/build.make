@@ -57,38 +57,38 @@ include CMakeFiles/cProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cProject.dir/flags.make
 
-CMakeFiles/cProject.dir/signalLinkedList.c.o: CMakeFiles/cProject.dir/flags.make
-CMakeFiles/cProject.dir/signalLinkedList.c.o: ../signalLinkedList.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cProject.dir/signalLinkedList.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cProject.dir/signalLinkedList.c.o   -c /home/tsf/CLionProjects/cProject/signalLinkedList.c
+CMakeFiles/cProject.dir/print_strtok.c.o: CMakeFiles/cProject.dir/flags.make
+CMakeFiles/cProject.dir/print_strtok.c.o: ../print_strtok.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cProject.dir/print_strtok.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cProject.dir/print_strtok.c.o   -c /home/tsf/CLionProjects/cProject/print_strtok.c
 
-CMakeFiles/cProject.dir/signalLinkedList.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cProject.dir/signalLinkedList.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tsf/CLionProjects/cProject/signalLinkedList.c > CMakeFiles/cProject.dir/signalLinkedList.c.i
+CMakeFiles/cProject.dir/print_strtok.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cProject.dir/print_strtok.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tsf/CLionProjects/cProject/print_strtok.c > CMakeFiles/cProject.dir/print_strtok.c.i
 
-CMakeFiles/cProject.dir/signalLinkedList.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cProject.dir/signalLinkedList.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tsf/CLionProjects/cProject/signalLinkedList.c -o CMakeFiles/cProject.dir/signalLinkedList.c.s
+CMakeFiles/cProject.dir/print_strtok.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cProject.dir/print_strtok.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tsf/CLionProjects/cProject/print_strtok.c -o CMakeFiles/cProject.dir/print_strtok.c.s
 
-CMakeFiles/cProject.dir/signalLinkedList.c.o.requires:
+CMakeFiles/cProject.dir/print_strtok.c.o.requires:
 
-.PHONY : CMakeFiles/cProject.dir/signalLinkedList.c.o.requires
+.PHONY : CMakeFiles/cProject.dir/print_strtok.c.o.requires
 
-CMakeFiles/cProject.dir/signalLinkedList.c.o.provides: CMakeFiles/cProject.dir/signalLinkedList.c.o.requires
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/signalLinkedList.c.o.provides.build
-.PHONY : CMakeFiles/cProject.dir/signalLinkedList.c.o.provides
+CMakeFiles/cProject.dir/print_strtok.c.o.provides: CMakeFiles/cProject.dir/print_strtok.c.o.requires
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/print_strtok.c.o.provides.build
+.PHONY : CMakeFiles/cProject.dir/print_strtok.c.o.provides
 
-CMakeFiles/cProject.dir/signalLinkedList.c.o.provides.build: CMakeFiles/cProject.dir/signalLinkedList.c.o
+CMakeFiles/cProject.dir/print_strtok.c.o.provides.build: CMakeFiles/cProject.dir/print_strtok.c.o
 
 
 # Object files for target cProject
 cProject_OBJECTS = \
-"CMakeFiles/cProject.dir/signalLinkedList.c.o"
+"CMakeFiles/cProject.dir/print_strtok.c.o"
 
 # External object files for target cProject
 cProject_EXTERNAL_OBJECTS =
 
-cProject: CMakeFiles/cProject.dir/signalLinkedList.c.o
+cProject: CMakeFiles/cProject.dir/print_strtok.c.o
 cProject: CMakeFiles/cProject.dir/build.make
 cProject: CMakeFiles/cProject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cProject"
@@ -99,7 +99,7 @@ CMakeFiles/cProject.dir/build: cProject
 
 .PHONY : CMakeFiles/cProject.dir/build
 
-CMakeFiles/cProject.dir/requires: CMakeFiles/cProject.dir/signalLinkedList.c.o.requires
+CMakeFiles/cProject.dir/requires: CMakeFiles/cProject.dir/print_strtok.c.o.requires
 
 .PHONY : CMakeFiles/cProject.dir/requires
 

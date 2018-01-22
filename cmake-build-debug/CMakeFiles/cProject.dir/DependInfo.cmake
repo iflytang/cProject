@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/tsf/CLionProjects/cProject/signalLinkedList.c" "/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles/cProject.dir/signalLinkedList.c.o"
+  "/home/tsf/CLionProjects/cProject/print_strtok.c" "/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles/cProject.dir/print_strtok.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

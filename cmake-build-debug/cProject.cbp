@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tsf/CLionProjects/cProject/signalLinkedList.c">
+		<Unit filename="/home/tsf/CLionProjects/cProject/print_strtok.c">
 			<Option target="cProject"/>
 		</Unit>
 		<Unit filename="/home/tsf/CLionProjects/cProject/CMakeLists.txt">
