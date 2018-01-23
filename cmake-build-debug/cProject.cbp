@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tsf/CLionProjects/cProject/print_strtok.c">
+		<Unit filename="/home/tsf/CLionProjects/cProject/main.c">
 			<Option target="cProject"/>
 		</Unit>
 		<Unit filename="/home/tsf/CLionProjects/cProject/CMakeLists.txt">

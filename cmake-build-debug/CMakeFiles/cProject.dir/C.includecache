@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/tsf/CLionProjects/cProject/print_strtok.c
-stdlib.h
--
+/home/tsf/CLionProjects/cProject/main.c
 stdio.h
 -
 string.h
+-
+malloc.h
+-
+stdbool.h
+-
+netinet/in.h
+-
+assert.h
 -
 

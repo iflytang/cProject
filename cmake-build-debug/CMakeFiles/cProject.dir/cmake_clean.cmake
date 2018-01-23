@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cProject.dir/print_strtok.c.o"
+  "CMakeFiles/cProject.dir/main.c.o"
   "cProject.pdb"
   "cProject"
 )

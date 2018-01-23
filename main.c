@@ -165,14 +165,26 @@ int main() {
     free(node);*/
 
     /* test union */
-    union u_test {
+    /*union u_test {
         float f;
         int i;
     };
     union u_test u_test;
     u_test.f = 3.14;
     //u_test.i = 4;
-    printf("%.2f\t%d\n", u_test.f, u_test.i);  // we cannot access two variables at same time
+    printf("%.2f\t%d\n", u_test.f, u_test.i);  // we cannot access two variables at same time*/
+
+    /* test parameter of array */
+    int print_char(const char *str) { // int print_char(const char str[])
+        printf("in print_char\n");
+        while (*str != '\0') {
+            printf("str: %c\n", *str);
+            str++;
+        }
+        return 0;
+    }
+    char str[] = "123";
+    print_char(str);
 
     return 0;
 }

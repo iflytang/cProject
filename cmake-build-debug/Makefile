@@ -123,32 +123,32 @@ cProject/fast:
 	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/build
 .PHONY : cProject/fast
 
-print_strtok.o: print_strtok.c.o
+main.o: main.c.o
 
-.PHONY : print_strtok.o
+.PHONY : main.o
 
 # target to build an object file
-print_strtok.c.o:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/print_strtok.c.o
-.PHONY : print_strtok.c.o
+main.c.o:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.o
+.PHONY : main.c.o
 
-print_strtok.i: print_strtok.c.i
+main.i: main.c.i
 
-.PHONY : print_strtok.i
+.PHONY : main.i
 
 # target to preprocess a source file
-print_strtok.c.i:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/print_strtok.c.i
-.PHONY : print_strtok.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.i
+.PHONY : main.c.i
 
-print_strtok.s: print_strtok.c.s
+main.s: main.c.s
 
-.PHONY : print_strtok.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-print_strtok.c.s:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/print_strtok.c.s
-.PHONY : print_strtok.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.s
+.PHONY : main.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cProject"
-	@echo "... print_strtok.o"
-	@echo "... print_strtok.i"
-	@echo "... print_strtok.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
