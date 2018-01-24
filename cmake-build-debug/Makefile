@@ -123,32 +123,32 @@ cProject/fast:
 	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/build
 .PHONY : cProject/fast
 
-main.o: main.c.o
+pointerFunctionAndFunctionPointer.o: pointerFunctionAndFunctionPointer.c.o
 
-.PHONY : main.o
+.PHONY : pointerFunctionAndFunctionPointer.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.o
-.PHONY : main.c.o
+pointerFunctionAndFunctionPointer.c.o:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o
+.PHONY : pointerFunctionAndFunctionPointer.c.o
 
-main.i: main.c.i
+pointerFunctionAndFunctionPointer.i: pointerFunctionAndFunctionPointer.c.i
 
-.PHONY : main.i
+.PHONY : pointerFunctionAndFunctionPointer.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.i
-.PHONY : main.c.i
+pointerFunctionAndFunctionPointer.c.i:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.i
+.PHONY : pointerFunctionAndFunctionPointer.c.i
 
-main.s: main.c.s
+pointerFunctionAndFunctionPointer.s: pointerFunctionAndFunctionPointer.c.s
 
-.PHONY : main.s
+.PHONY : pointerFunctionAndFunctionPointer.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/main.c.s
-.PHONY : main.c.s
+pointerFunctionAndFunctionPointer.c.s:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.s
+.PHONY : pointerFunctionAndFunctionPointer.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cProject"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... pointerFunctionAndFunctionPointer.o"
+	@echo "... pointerFunctionAndFunctionPointer.i"
+	@echo "... pointerFunctionAndFunctionPointer.s"
 .PHONY : help
 
 
