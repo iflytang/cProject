@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <signal.h>
 
+typedef void (*Handler)(int signum); // declare a function pointer type, use 'Handler' directly
 
 void handler(int signum) {
     printf("It's time to get up!\n");
@@ -18,7 +19,9 @@ int main() {
     /* callback, pay attention to parameter, which is a function pointer */
     unsigned int sleep_time = 10;
     alarm(sleep_time);  // when sleep_time up, throw SIGALRM
-    signal(SIGALRM, handler); // handler(int signum) is called
+//    signal(SIGALRM, handler); // handler(int signum) is called
+    Handler hdl = handler;  // typedef works here
+    signal(SIGALRM, hdl);
 
     for(int i = 0; i < sleep_time; i++) {
         sleep(1);  // describe time pass
