@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o"
+  "CMakeFiles/cProject.dir/callback.c.o"
   "cProject.pdb"
   "cProject"
 )

@@ -3,5 +3,5 @@ project(cProject)
 
 set(CMAKE_C_STANDARD 99)
 
-set(SOURCE_FILES  pointerFunctionAndFunctionPointer.c)
+set(SOURCE_FILES   callback.c)
 add_executable(cProject ${SOURCE_FILES})

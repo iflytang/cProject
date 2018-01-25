@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/tsf/CLionProjects/cProject/pointerFunctionAndFunctionPointer.c
+/home/tsf/CLionProjects/cProject/callback.c
 stdio.h
 -
-malloc.h
+unistd.h
 -
-memory.h
--
-stdlib.h
+signal.h
 -
 

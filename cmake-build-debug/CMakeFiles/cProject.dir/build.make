@@ -57,38 +57,38 @@ include CMakeFiles/cProject.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cProject.dir/flags.make
 
-CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o: CMakeFiles/cProject.dir/flags.make
-CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o: ../pointerFunctionAndFunctionPointer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o   -c /home/tsf/CLionProjects/cProject/pointerFunctionAndFunctionPointer.c
+CMakeFiles/cProject.dir/callback.c.o: CMakeFiles/cProject.dir/flags.make
+CMakeFiles/cProject.dir/callback.c.o: ../callback.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cProject.dir/callback.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/cProject.dir/callback.c.o   -c /home/tsf/CLionProjects/cProject/callback.c
 
-CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tsf/CLionProjects/cProject/pointerFunctionAndFunctionPointer.c > CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.i
+CMakeFiles/cProject.dir/callback.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cProject.dir/callback.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/tsf/CLionProjects/cProject/callback.c > CMakeFiles/cProject.dir/callback.c.i
 
-CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tsf/CLionProjects/cProject/pointerFunctionAndFunctionPointer.c -o CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.s
+CMakeFiles/cProject.dir/callback.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cProject.dir/callback.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/tsf/CLionProjects/cProject/callback.c -o CMakeFiles/cProject.dir/callback.c.s
 
-CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.requires:
+CMakeFiles/cProject.dir/callback.c.o.requires:
 
-.PHONY : CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.requires
+.PHONY : CMakeFiles/cProject.dir/callback.c.o.requires
 
-CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.provides: CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.requires
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.provides.build
-.PHONY : CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.provides
+CMakeFiles/cProject.dir/callback.c.o.provides: CMakeFiles/cProject.dir/callback.c.o.requires
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/callback.c.o.provides.build
+.PHONY : CMakeFiles/cProject.dir/callback.c.o.provides
 
-CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.provides.build: CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o
+CMakeFiles/cProject.dir/callback.c.o.provides.build: CMakeFiles/cProject.dir/callback.c.o
 
 
 # Object files for target cProject
 cProject_OBJECTS = \
-"CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o"
+"CMakeFiles/cProject.dir/callback.c.o"
 
 # External object files for target cProject
 cProject_EXTERNAL_OBJECTS =
 
-cProject: CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o
+cProject: CMakeFiles/cProject.dir/callback.c.o
 cProject: CMakeFiles/cProject.dir/build.make
 cProject: CMakeFiles/cProject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tsf/CLionProjects/cProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cProject"
@@ -99,7 +99,7 @@ CMakeFiles/cProject.dir/build: cProject
 
 .PHONY : CMakeFiles/cProject.dir/build
 
-CMakeFiles/cProject.dir/requires: CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o.requires
+CMakeFiles/cProject.dir/requires: CMakeFiles/cProject.dir/callback.c.o.requires
 
 .PHONY : CMakeFiles/cProject.dir/requires
 

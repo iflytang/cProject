@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/tsf/CLionProjects/cProject/pointerFunctionAndFunctionPointer.c">
+		<Unit filename="/home/tsf/CLionProjects/cProject/callback.c">
 			<Option target="cProject"/>
 		</Unit>
 		<Unit filename="/home/tsf/CLionProjects/cProject/CMakeLists.txt">

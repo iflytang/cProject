@@ -1,1 +1,1 @@
-/usr/bin/cc  -g   CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o  -o cProject 
+/usr/bin/cc  -g   CMakeFiles/cProject.dir/callback.c.o  -o cProject 

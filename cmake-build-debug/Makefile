@@ -123,32 +123,32 @@ cProject/fast:
 	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/build
 .PHONY : cProject/fast
 
-pointerFunctionAndFunctionPointer.o: pointerFunctionAndFunctionPointer.c.o
+callback.o: callback.c.o
 
-.PHONY : pointerFunctionAndFunctionPointer.o
+.PHONY : callback.o
 
 # target to build an object file
-pointerFunctionAndFunctionPointer.c.o:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.o
-.PHONY : pointerFunctionAndFunctionPointer.c.o
+callback.c.o:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/callback.c.o
+.PHONY : callback.c.o
 
-pointerFunctionAndFunctionPointer.i: pointerFunctionAndFunctionPointer.c.i
+callback.i: callback.c.i
 
-.PHONY : pointerFunctionAndFunctionPointer.i
+.PHONY : callback.i
 
 # target to preprocess a source file
-pointerFunctionAndFunctionPointer.c.i:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.i
-.PHONY : pointerFunctionAndFunctionPointer.c.i
+callback.c.i:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/callback.c.i
+.PHONY : callback.c.i
 
-pointerFunctionAndFunctionPointer.s: pointerFunctionAndFunctionPointer.c.s
+callback.s: callback.c.s
 
-.PHONY : pointerFunctionAndFunctionPointer.s
+.PHONY : callback.s
 
 # target to generate assembly for a file
-pointerFunctionAndFunctionPointer.c.s:
-	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/pointerFunctionAndFunctionPointer.c.s
-.PHONY : pointerFunctionAndFunctionPointer.c.s
+callback.c.s:
+	$(MAKE) -f CMakeFiles/cProject.dir/build.make CMakeFiles/cProject.dir/callback.c.s
+.PHONY : callback.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... cProject"
-	@echo "... pointerFunctionAndFunctionPointer.o"
-	@echo "... pointerFunctionAndFunctionPointer.i"
-	@echo "... pointerFunctionAndFunctionPointer.s"
+	@echo "... callback.o"
+	@echo "... callback.i"
+	@echo "... callback.s"
 .PHONY : help
 
 
